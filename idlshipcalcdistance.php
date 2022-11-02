@@ -359,11 +359,11 @@ if (in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get_
     function checkout_send_fias_code_via_ajax_js() {
         if ( is_checkout() && ! is_wc_endpoint_url() ) :
         ?><script type="text/javascript">
-            $(function() {
-                $("#start_distance").blur(function(){
+            jQuery(function() {
+                jQuery("#start_distance").blur(function(){
                     sendAjaxRequest();
                 }); 
-                $("#end_distance").blur(function(){
+                jQuery("#end_distance").blur(function(){
                     sendAjaxRequest();
                 }); 
             })
